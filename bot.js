@@ -25,45 +25,45 @@ bot.on('ready', function(evt){
 bot.on('message', function(user, userID, channelID, message, evt){
     //Bot needs to know if it will execute a command.
     //Bot will listen for messages that start with an '!'.
-    if(message.substring(0, 1) == '!'){
+    if(message.substring(0, 1) == 'z!'){
         var args = message.substring(1).split(' ');
         var cmd = args[0];
 
         args = args.splice(1);
         switch(cmd){
-            //!ping
+            //z!ping
             case 'ping':
                 bot.sendMessage({
                     to: channelID,
-                    message: "Hi, this is the tutorial bot!\nUse the command !tutcommands for all my commands!"
+                    message: "Pong!"
                 });
             break;
-            //!tutcommands
+            //z!helpcommands
             case 'tutcommands':
                 bot.sendMessage({
                     to: channelID,
-                    message: "My commands are:\n!ping\n!tutcommands\n!talk\n!yell\n!calm"
+                    message: "My commands are:z!help z!amar z!zore z!invitebot"
                 });
             break;
-            //!talk
-            case 'talk':
+            //z!amar
+            case 'amar':
                 bot.sendMessage({
                     to: channelID,
-                    message: "Look at me! I'm talking!"
+                    message: "Amar is the creator of me. He created me when Zore requests Amar/"
                 });
             break;
-            //!yell
-            case 'yell':
+            //z!zore
+            case 'zore':
                 bot.sendMessage({
                     to: channelID,
-                    message: "I'M YELLING OKAY!!"
+                    message: "Zore is the requestor of me."
                 });
             break;
-            //!calm
+            //z!invitebot
             case 'calm':
                 bot.sendMessage({
                         to: channelID,
-                        message: "Calm down, everything is going to be okay."
+                        message: "https://discordapp.com/api/oauth2/authorize?client_id=471300786014388224&permissions=0&scope=bot"
                 });
             break;
         }
