@@ -60,7 +60,7 @@ bot.on('message', function(user, userID, channelID, message, evt){
                 });
             break;
             //z!invitebot
-            case 'calm':
+            case 'invitebot':
                 bot.sendMessage({
                         to: channelID,
                         message: "https://discordapp.com/api/oauth2/authorize?client_id=471300786014388224&permissions=0&scope=bot"
