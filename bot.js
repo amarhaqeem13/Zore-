@@ -8,6 +8,9 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === 'z!ping') {
     	message.reply('Pong!');
+        
+    if (message.content === 'z!help') {
+        message.reply ('z!amar z!zore');
   	}
 });
 
