@@ -9,7 +9,7 @@ client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
   	}
-cilent.on ('message', message => {
+cilent.on('message', message => {
     if (message.content === 'z!help') {
         message.reply ('testing');
         }
