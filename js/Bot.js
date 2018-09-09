@@ -73,12 +73,6 @@ Bot.onReady = function() {
 	console.log('Bot is ready!');
 	this.preformInitialization();
 	
-	// status
-	Bot.user.setStatus('Online')
-	
-	
-	// game and streaming
-	Bot.user.setGame('z!help')
 };
 
 Bot.preformInitialization = function() {
